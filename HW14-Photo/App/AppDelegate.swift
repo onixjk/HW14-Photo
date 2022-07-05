@@ -24,27 +24,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let libraryViewController = LibraryViewController()
         let libraryNavigationController = UINavigationController(rootViewController: libraryViewController)
         libraryNavigationController.navigationBar.prefersLargeTitles = true
-        libraryViewController.tabBarItem = UITabBarItem(title: "Медиатека", image: UIImage(systemName: "photo.on.rectangle"), tag: 0)
+        libraryViewController.tabBarItem = UITabBarItem(title: Strings.libraryNavigationControllerTitle, image: UIImage(systemName: "photo.on.rectangle"), tag: 0)
         
         let forYouViewController = ForYouViewController()
         let forYouNavigationController = UINavigationController(rootViewController: forYouViewController)
         forYouNavigationController.navigationBar.prefersLargeTitles = true
-        forYouViewController.tabBarItem = UITabBarItem(title: "Для Вас", image: UIImage(systemName: "doc.richtext"), tag: 1)
+        forYouViewController.tabBarItem = UITabBarItem(title: Strings.forYouNavigationControllerTitle, image: UIImage(systemName: "doc.richtext"), tag: 1)
         
         let albumsViewController = AlbumsViewController()
         let albumsNavigationController = UINavigationController(rootViewController: albumsViewController)
         albumsNavigationController.navigationBar.prefersLargeTitles = true
-        albumsViewController.tabBarItem = UITabBarItem(title: "Альбомы", image: UIImage(systemName: "rectangle.stack"), tag: 2)
+        albumsViewController.tabBarItem = UITabBarItem(title: Strings.albumNavigationControllerTitle, image: UIImage(systemName: "rectangle.stack"), tag: 2)
         
         let searchViewController = SearchViewController()
         let searchNavigationController = UINavigationController(rootViewController: searchViewController)
         searchNavigationController.navigationBar.prefersLargeTitles = true
-        searchViewController.tabBarItem = UITabBarItem(title: "Поиск", image: UIImage(systemName: "magnifyingglass"), tag: 2)
-        
-        let searchViewController = SearchViewController()
-        let searchNavigationController = UINavigationController(rootViewController: searchViewController)
-        searchNavigationController.navigationBar.prefersLargeTitles = true
-        searchViewController.tabBarItem = UITabBarItem(title: "Поиск", image: UIImage(systemName: "magnifyingglass"), tag: 2)
+        searchViewController.tabBarItem = UITabBarItem(title: Strings.searchNavigationControllerTitle, image: UIImage(systemName: "magnifyingglass"), tag: 3)
         
         tabBar.setViewControllers([libraryNavigationController,
                                    forYouNavigationController,

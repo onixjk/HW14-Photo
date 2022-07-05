@@ -8,6 +8,6 @@
 enum Strings {
     static let libraryNavigationControllerTitle = "Медиатека"
     static let forYouNavigationControllerTitle = "Для Вас"
-    static let albumNavigationControllerTitle = "Альбом"
+    static let albumNavigationControllerTitle = "Альбомы"
     static let searchNavigationControllerTitle = "Поиск"
 }
