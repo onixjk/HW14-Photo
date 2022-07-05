@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02093B2328745A12002ABB0F /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02093B2228745A12002ABB0F /* ForYouViewController.swift */; };
 		02093B2528745A2E002ABB0F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02093B2428745A2E002ABB0F /* SearchViewController.swift */; };
+		02093B2728748C4A002ABB0F /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02093B2628748C4A002ABB0F /* Metric.swift */; };
 		02BA69E728744FDA004BC723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA69E628744FDA004BC723 /* AppDelegate.swift */; };
 		02BA69EB28744FDA004BC723 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA69EA28744FDA004BC723 /* AlbumsViewController.swift */; };
 		02BA69F028744FDA004BC723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BA69EF28744FDA004BC723 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		02093B2228745A12002ABB0F /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
 		02093B2428745A2E002ABB0F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		02093B2628748C4A002ABB0F /* Metric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
 		02BA69E328744FDA004BC723 /* HW14-Photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW14-Photo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BA69E628744FDA004BC723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02BA69EA28744FDA004BC723 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				02093B2228745A12002ABB0F /* ForYouViewController.swift */,
 				02BA69EA28744FDA004BC723 /* AlbumsViewController.swift */,
 				02093B2428745A2E002ABB0F /* SearchViewController.swift */,
+				02093B2628748C4A002ABB0F /* Metric.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				02093B2528745A2E002ABB0F /* SearchViewController.swift in Sources */,
 				02093B2328745A12002ABB0F /* ForYouViewController.swift in Sources */,
 				02BA69EB28744FDA004BC723 /* AlbumsViewController.swift in Sources */,
+				02093B2728748C4A002ABB0F /* Metric.swift in Sources */,
 				02BA69FB287452E3004BC723 /* LibraryViewController.swift in Sources */,
 				02BA69E728744FDA004BC723 /* AppDelegate.swift in Sources */,
 			);
