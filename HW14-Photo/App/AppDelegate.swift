@@ -31,10 +31,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         forYouNavigationController.navigationBar.prefersLargeTitles = true
         forYouViewController.tabBarItem = UITabBarItem(title: "Для Вас", image: UIImage(systemName: "doc.richtext"), tag: 1)
         
-        
+        let albumsViewController = AlbumsViewController()
+        let albumsNavigationController = UINavigationController(rootViewController: albumsViewController)
+        albumsNavigationController.navigationBar.prefersLargeTitles = true
+        albumsViewController.tabBarItem = UITabBarItem(title: "Альбомы", image: UIImage(systemName: "rectangle.stack"), tag: 2)
         
         tabBar.setViewControllers([libraryNavigationController,
-                                   forYouNavigationController],
+                                   forYouNavigationController,
+                                   albumsViewController],
                                   animated: true)
         
         window = UIWindow(frame: UIScreen.main.bounds)

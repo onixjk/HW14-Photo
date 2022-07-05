@@ -1,5 +1,5 @@
 //
-//  LibraryViewController.swift
+//  ViewController.swift
 //  HW14-Photo
 //
 //  Created by Onix qq on 5.07.22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LibraryViewController: UIViewController {
+class AlbumsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class LibraryViewController: UIViewController {
     
     func setupView() {
         view.backgroundColor = .white
-        title = Strings.libraryNavigationControllerTitle
+        title = Strings.forYouNavigationControllerTitle
     }
-    
 }
+
