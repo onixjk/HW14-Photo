@@ -36,9 +36,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         albumsNavigationController.navigationBar.prefersLargeTitles = true
         albumsViewController.tabBarItem = UITabBarItem(title: "Альбомы", image: UIImage(systemName: "rectangle.stack"), tag: 2)
         
+        let searchViewController = SearchViewController()
+        let searchNavigationController = UINavigationController(rootViewController: searchViewController)
+        searchNavigationController.navigationBar.prefersLargeTitles = true
+        searchViewController.tabBarItem = UITabBarItem(title: "Поиск", image: UIImage(systemName: "magnifyingglass"), tag: 2)
+        
+        let searchViewController = SearchViewController()
+        let searchNavigationController = UINavigationController(rootViewController: searchViewController)
+        searchNavigationController.navigationBar.prefersLargeTitles = true
+        searchViewController.tabBarItem = UITabBarItem(title: "Поиск", image: UIImage(systemName: "magnifyingglass"), tag: 2)
+        
         tabBar.setViewControllers([libraryNavigationController,
                                    forYouNavigationController,
-                                   albumsViewController],
+                                   albumsNavigationController,
+                                   searchNavigationController],
                                   animated: true)
         
         window = UIWindow(frame: UIScreen.main.bounds)
