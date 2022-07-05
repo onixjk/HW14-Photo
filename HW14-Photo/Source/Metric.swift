@@ -6,6 +6,7 @@
 //
 
 enum Strings {
-    static let LibraryNavigationControllerTitle = "Медиатека"
-    static let ForYouNavigationControllerTitle = "Для Вас"
+    static let libraryNavigationControllerTitle = "Медиатека"
+    static let forYouNavigationControllerTitle = "Для Вас"
+    static let albumNavigationControllerTitle = "Альбом"
 }
