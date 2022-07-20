@@ -8,20 +8,32 @@
 import UIKit
 
 class AlbumsViewController: UIViewController {
-
+    
+    //MARK: - Views
+    
+    let addButton = UIBarButtonItem(barButtonSystemItem: .add,
+                                    target: nil,
+                                    action: nil)
+    
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
+        setupNavigationBar()
     }
     
     // MARK: - Settings
     
     func setupView() {
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         title = Strings.albumTitle
     }
+    
+    private func setupNavigationBar() {
+        navigationItem.leftBarButtonItems = [addButton]
+    }
+
 }
 
