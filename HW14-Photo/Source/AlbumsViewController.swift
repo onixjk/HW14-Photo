@@ -21,7 +21,7 @@ class AlbumsViewController: UIViewController {
     
     func setupView() {
         view.backgroundColor = .white
-        title = Strings.albumNavigationControllerTitle
+        title = Strings.albumTitle
     }
 }
 

@@ -17,6 +17,6 @@ class SearchViewController: UIViewController {
     
     func setupView() {
         view.backgroundColor = .white
-        title = Strings.searchNavigationControllerTitle
+        title = Strings.searchTitle
     }
 }

@@ -17,7 +17,7 @@ class LibraryViewController: UIViewController {
     
     func setupView() {
         view.backgroundColor = .white
-        title = Strings.libraryNavigationControllerTitle
+        title = Strings.libraryTitle
     }
     
 }

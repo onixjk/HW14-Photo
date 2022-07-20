@@ -18,38 +18,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func setWindow() {
+    private func setupTabBar() -> UITabBarController {
         let tabBar = UITabBarController()
         
         let libraryViewController = LibraryViewController()
         let libraryNavigationController = UINavigationController(rootViewController: libraryViewController)
         libraryNavigationController.navigationBar.prefersLargeTitles = true
-        libraryViewController.tabBarItem = UITabBarItem(title: Strings.libraryNavigationControllerTitle, image: UIImage(systemName: "photo.on.rectangle"), tag: 0)
+        libraryViewController.tabBarItem = UITabBarItem(title: Strings.libraryTitle,
+                                                        image: UIImage(systemName: Strings.libraryIcon),
+                                                        tag: 0)
         
         let forYouViewController = ForYouViewController()
         let forYouNavigationController = UINavigationController(rootViewController: forYouViewController)
         forYouNavigationController.navigationBar.prefersLargeTitles = true
-        forYouViewController.tabBarItem = UITabBarItem(title: Strings.forYouNavigationControllerTitle, image: UIImage(systemName: "doc.richtext"), tag: 1)
+        forYouViewController.tabBarItem = UITabBarItem(title: Strings.forYouTitle,
+                                                       image: UIImage(systemName: Strings.forYouIcon),
+                                                       tag: 1)
         
         let albumsViewController = AlbumsViewController()
         let albumsNavigationController = UINavigationController(rootViewController: albumsViewController)
         albumsNavigationController.navigationBar.prefersLargeTitles = true
-        albumsViewController.tabBarItem = UITabBarItem(title: Strings.albumNavigationControllerTitle, image: UIImage(systemName: "rectangle.stack"), tag: 2)
+        albumsViewController.tabBarItem = UITabBarItem(title: Strings.albumTitle,
+                                                       image: UIImage(systemName: Strings.albumIcon),
+                                                       tag: 2)
         
         let searchViewController = SearchViewController()
         let searchNavigationController = UINavigationController(rootViewController: searchViewController)
         searchNavigationController.navigationBar.prefersLargeTitles = true
-        searchViewController.tabBarItem = UITabBarItem(title: Strings.searchNavigationControllerTitle, image: UIImage(systemName: "magnifyingglass"), tag: 3)
+        searchViewController.tabBarItem = UITabBarItem(title: Strings.searchTitle,
+                                                       image: UIImage(systemName: Strings.searchIcon),
+                                                       tag: 3)
         
         tabBar.setViewControllers([libraryNavigationController,
                                    forYouNavigationController,
                                    albumsNavigationController,
                                    searchNavigationController],
                                   animated: true)
-        
+        return tabBar
+    }
+    
+    func setWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = tabBar
+        window?.rootViewController = setupTabBar()
         window?.makeKeyAndVisible()
     }
+    
 }
 
