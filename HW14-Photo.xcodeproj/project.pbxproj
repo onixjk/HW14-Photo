@@ -68,12 +68,12 @@
 		02BA69FC28745392004BC723 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				02093B2628748C4A002ABB0F /* Metric.swift */,
 				02BA69FF28745417004BC723 /* ViewControllers */,
 				02BA69FA287452E3004BC723 /* LibraryViewController.swift */,
 				02093B2228745A12002ABB0F /* ForYouViewController.swift */,
 				02BA69EA28744FDA004BC723 /* AlbumsViewController.swift */,
 				02093B2428745A2E002ABB0F /* SearchViewController.swift */,
-				02093B2628748C4A002ABB0F /* Metric.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";

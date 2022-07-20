@@ -17,6 +17,6 @@ class ForYouViewController: UIViewController {
     
     func setupView() {
         view.backgroundColor = .white
-        title = Strings.forYouNavigationControllerTitle
+        title = Strings.forYouTitle
     }
 }

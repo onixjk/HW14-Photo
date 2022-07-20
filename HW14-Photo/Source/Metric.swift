@@ -6,8 +6,13 @@
 //
 
 enum Strings {
-    static let libraryNavigationControllerTitle = "Медиатека"
-    static let forYouNavigationControllerTitle = "Для Вас"
-    static let albumNavigationControllerTitle = "Альбомы"
-    static let searchNavigationControllerTitle = "Поиск"
+    static let libraryTitle = "Медиатека"
+    static let forYouTitle = "Для Вас"
+    static let albumTitle = "Альбомы"
+    static let searchTitle = "Поиск"
+    
+    static let libraryIcon = "photo.on.rectangle"
+    static let forYouIcon = "doc.richtext"
+    static let albumIcon = "rectangle.stack"
+    static let searchIcon = "magnifyingglass"
 }
